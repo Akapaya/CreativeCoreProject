@@ -1,0 +1,45 @@
+digraph G {
+node0 [shape="box" color="steelblue" style="filled" label="VFXValue`1 Boolean (True)
+_vfx_enabled_a
+_vfx_enabled_b
+_vfx_enabled_a
+_vfx_enabled_b
+_vfx_enabled_c
+_vfx_enabled_d
+_vfx_enabled_a
+_vfx_enabled_b
+_vfx_enabled_c
+_vfx_enabled_a"]
+node1 [shape="box" color="steelblue" style="filled" label="VFXValue`1 Float (16)
+Rate_a"]
+node2 [shape="box" color="steelblue" style="filled" label="VFXValue`1 Float3 ((0.00, 0.00, 0.00))
+A_a
+bounds_center"]
+node3 [shape="box" color="steelblue" style="filled" label="VFXValue`1 Float3 ((1.00, 1.00, 1.00))
+bounds_size"]
+node4 [shape="box" color="cyan" style="filled" label="VFXExpressionTransformVector Float3
+B_a"]
+node5 [shape="box" label="VFXBuiltInExpression Matrix4x4 (WorldToLocal)"]
+node6 [shape="box" color="lightslategray" style="filled" label="VFXValue`1 Float3 ((0.50, 0.50, 0.50))"]
+node7 [shape="box" color="steelblue" style="filled" label="VFXValue`1 Float (1)
+A_b"]
+node8 [shape="box" color="steelblue" style="filled" label="VFXValue`1 Float (3)
+B_b"]
+node9 [shape="box" color="steelblue" style="filled" label="VFXValue`1 Float3 ((0.00, 0.00, 1.00))
+Direction_a"]
+node10 [shape="box" color="cyan" style="filled" label="VFXBuiltInExpression Float (DeltaTime)
+deltaTime_b
+deltaTime_c"]
+node11 [shape="box" color="cyan" style="filled" label="VFXExpressionBakeCurve Float4
+Size_b"]
+node12 [shape="box" color="lightslategray" style="filled" label="VFXValue`1 Curve (UnityEngine.AnimationCurve)"]
+node13 [shape="box" color="cyan" style="filled" label="VFXExpressionBakeGradient Float3
+Color_c"]
+node14 [shape="box" color="lightslategray" style="filled" label="VFXValue`1 ColorGradient (UnityEngine.Gradient)"]
+node15 [shape="box" color="cyan" style="filled" label="VFXTexture2DValue Texture2D (36694)
+mainTexture"]
+node5 -> node4 [headlabel="0"]
+node6 -> node4 [headlabel="1"]
+node12 -> node11 
+node14 -> node13 
+}
